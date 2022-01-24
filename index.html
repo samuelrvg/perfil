@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Perfil</title>
+    <!-- <script>
+        const idade = () => {
+            const d = new Date,
+            anoAtual = d.getFullYear(),
+            mesAtual = d.getMonth() + 1,
+            diaAtual = d.getDate(),
+
+            const anoAniversario = +1997,
+            const mesAniversario = +03,
+            const diaAniversario = +04,
+
+            quantos_anos = anoAtual - anoAniversario;
+
+            if (mesAtual < mesAniversario || mesAtual == mesAniversario && diaAtual < diaAniversario) {
+                quantos_anos--;
+            }
+
+            document.getElementById("idade").innerHTML = quantos_anos < 0 ? 0 : quantos_anos;
+        }
+    </script> -->
+  </head>
+  <body>
+    
+    <div class="container">
+        <div class="border border-2 m-4 p-4">
+            <div class="text-center"><h4 class="font-monospace">Perfil</h4></div>
+
+            <div class="row">
+                <div class="col-4">
+                    <h4 class="font-monospace">Sobre mim</h4>
+                    <p class="font-monospace"> Olá 👋</p>
+                    <p class="font-monospace">Desenvolvedor C# desde 2015 com experiências em React, React Native, Angular, JavaScript, Python, VueJs entre outras.</p>
+                        
+                    <p>
+                        <ul>
+                            <li class="font-monospace">Primeiro package publicado no Nugget.</li>
+                            <li class="font-monospace">Primeira extensão criada e publicada do VSCode do projeto Delégua</li>
+                            <li class="font-monospace">Primeiro artigo publicado no Linkeding sobre AspNet Core 3.1 e Oracle.</li>
+                            <li class="font-monospace">Líder Técnico na Swood.</li>
+                            <li class="font-monospace">Cofundador Ekonomia</li>
+                        </ul>
+                    </p>
+    
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-center">
+                    <img class="rounded-circle" src="https://avatars.githubusercontent.com/u/14062631?v=4" width="260" height="260">
+                </div>
+                <div class="col-4">
+                    <h4 class="font-monospace">Detalhes</h4>
+                    <p class="fw-bold">Nome:</p>
+                    <p class="font-monospace">Samuel Renan Gonçalves Vaz</p>
+                    <p class="fw-bold">Idade:</p>
+                    <p class="font-monospace">25 anos</p>
+                    <p class="fw-bold">Cidade:</p>
+                    <p class="font-monospace">Cuiabá-MT</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
