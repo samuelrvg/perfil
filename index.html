@@ -12,26 +12,6 @@
           font-family: monospace;
         }
     </style>
-    <!-- <script>
-        const idade = () => {
-            const d = new Date,
-            anoAtual = d.getFullYear(),
-            mesAtual = d.getMonth() + 1,
-            diaAtual = d.getDate(),
-
-            const anoAniversario = +1997,
-            const mesAniversario = +03,
-            const diaAniversario = +04,
-
-            quantos_anos = anoAtual - anoAniversario;
-
-            if (mesAtual < mesAniversario || mesAtual == mesAniversario && diaAtual < diaAniversario) {
-                quantos_anos--;
-            }
-
-            document.getElementById("idade").innerHTML = quantos_anos < 0 ? 0 : quantos_anos;
-        }
-    </script> -->
   </head>
   <body>
     
@@ -63,7 +43,7 @@
                     <p class="fw-bold">Nome:</p>
                     <p>Samuel Renan Gonçalves Vaz</p>
                     <p class="fw-bold">Idade:</p>
-                    <p>25 anos</p>
+                    <p><span id='idade'></span> anos</p>
                     <p class="fw-bold">Cidade:</p>
                     <p>Cuiabá MT</p>
 
@@ -85,4 +65,26 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
+  <script>
+    const idade = () => {
+        const data = new Date,
+        anoAtual = data.getFullYear();
+        mesAtual = data.getMonth() + 1;
+        diaAtual = data.getDate();
+
+        const anoAniversario = +1997;
+        const mesAniversario = +03;
+        const diaAniversario = +04;
+
+        quantoAnos = anoAtual - anoAniversario;
+
+        if (mesAtual < mesAniversario || mesAtual == mesAniversario && diaAtual < diaAniversario) {
+            quantoAnos--;
+        }
+
+        return quantoAnos < 0 ? 0 : quantoAnos;
+    }
+
+    document.getElementById("idade").innerHTML = idade();
+</script>
 </html>
