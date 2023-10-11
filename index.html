@@ -17,19 +17,20 @@
     
     <div class="container min-vh-100 d-flex align-items-center">
         <div class="border border-2 m-4 p-4">
-            <div class="text-center"><h4>Perfil</h4></div>
+            <div class="text-center"><h4>Profile</h4></div>
     
             <div class="row align-items-center">
                 <div class="col-12 col-md-4">
-                    <h4>Sobre mim</h4>
-                    <p> Olá 👋</p>
-                    <p>Desenvolvedor C# desde 2015 com experiências em React, React Native, Angular, JavaScript, Python, VueJs entre outras.</p>        
+                    <h4>About me</h4>
+                    <p>Software Enginner since 2015 with expirence in C#, JavaScript/TypeScript, React, Vue, Python, Aplications Mobile</p>
                     <p>
                         <ul>
-                            <li>Primeiro pacote publicado no <a href="https://www.nuget.org/packages/DapperExtensions.Oracle/" target="_blank">Nugget</a>.</li>
-                            <li>Primeira extensão criada <a href="https://marketplace.visualstudio.com/items?itemName=designliquido.designliquido-vscode" target="_blank">VSCode</a> do projeto <a href="https://github.com/DesignLiquido/delegua" target="_blank">Delégua</a>.</li>
-                            <li>Desenvolvedor Full Stack na <a href="https://cwi.com.br/" target="_blank">CWI</a>.</li>
-                            <li>Cofundador <a href="https://ekonomia.com.br/" target="_blank">Ekonomia</a>.</li>
+                            <li>Full Stack at <a href="https://cwi.com.br/" target="_blank">CWI</a>.</li>
+                            <li>Packages <a href="https://www.nuget.org/profiles/samuelrvg/" target="_blank">Nugget</a>.</li>
+                            <li>Packages <a href="https://www.npmjs.com/~samuelrvg/" target="_blank">NPM</a>.</li>
+                            <li>Mantainer <a href="https://github.com/DesignLiquido/delegua/" target="_blank">Delégua</a>.</li>
+                            <li>Extension <a href="https://marketplace.visualstudio.com/items?itemName=designliquido.designliquido-vscode" target="_blank">VSCode</a>.</li>
+                            <li>Co-Founder <a href="https://ekonomia.com.br/" target="_blank">Ekonomia</a>.</li>
                         </ul>
                     </p>
         
@@ -38,13 +39,10 @@
                     <img class="rounded-circle" src="https://avatars.githubusercontent.com/u/14062631?v=4" width="260" height="260">
                 </div>
                 <div class="col-12 col-md-4">
-                    <h4>Detalhes</h4>
-                    <p class="fw-bold">Nome:</p>
-                    <p>Samuel Renan Gonçalves Vaz</p>
-                    <p class="fw-bold">Idade:</p>
-                    <p><span id='idade'></span> anos</p>
-                    <p class="fw-bold">Cidade:</p>
-                    <p>Cuiabá MT</p>
+                    <p class="fw-bold">Name:</p>
+                    <p>> Samuel Renan Gonçalves Vaz</p>
+                    <p class="fw-bold">Country:</p>
+                    <p>> Brazil</p>
 
                     <a href="https://www.linkedin.com/in/samuel-renan-goncalves-vaz/" target="_blank">
                         <img src="assets/linkedin.svg" height="30" width="30">
@@ -65,25 +63,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
   <script>
-    const idade = () => {
-        const data = new Date,
-        anoAtual = data.getFullYear();
-        mesAtual = data.getMonth() + 1;
-        diaAtual = data.getDate();
-
-        const anoAniversario = +1997;
-        const mesAniversario = +03;
-        const diaAniversario = +04;
-
-        quantoAnos = anoAtual - anoAniversario;
-
-        if (mesAtual < mesAniversario || mesAtual == mesAniversario && diaAtual < diaAniversario) {
-            quantoAnos--;
-        }
-
-        return quantoAnos < 0 ? 0 : quantoAnos;
-    }
-
-    document.getElementById("idade").innerHTML = idade();
 </script>
 </html>

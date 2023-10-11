@@ -1,3 +1,3 @@
 ## Perfil
 
-- https://www.samuelrvg.com.br/
+- https://www.samuelrvg.com/
